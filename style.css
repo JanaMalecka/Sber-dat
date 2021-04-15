@@ -1,0 +1,54 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(238, 181, 158),
+    rgb(249, 250, 198)
+  );
+}
+
+main {
+  margin: 20px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+h1 {
+  padding: 0.5em 2em 0.5em 1.5em;
+}
+
+button {
+  margin: 1rem 0 0 0.5rem;
+}
+input:invalid {
+  background: rgb(248, 223, 223);
+}
+
+input:valid {
+  background: rgb(225, 245, 215);
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: block;
+  padding: 0.5rem;
+}
+@media (min-width: 500px) {
+  main {
+    flex-direction: row;
+  }
+  .name {
+    display: flex;
+    flex-direction: row;
+  }
+  .season {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form method="post" action="http://formular.itgirls.cz/">
+        <h1>Sběr dat</h1>
+        <div class="name">
+          <label>Jméno: <input type="name" name="first-name" required /></label>
+          <label>Příjmení: <input type="name" name="surname" required /></label>
+        </div>
+        <label
+          >Datum narození: <input type="date" name="birthday" required
+        /></label>
+        <label>E-mail: <input type="email" name="email" required /></label>
+        <label>Telefon: <input type="tel" name="telephone" /></label>
+        <label
+          >Oblíbená barva: <input type="color" name="favorite color"
+        /></label>
+        <label
+          >Oblíbené číslo: <input type="number" name="favorite number"
+        /></label>
+        <label
+          >Nejčastěji navštěvovaný web: <input type="url" name="website"
+        /></label>
+        <label>Nejoblíbenější roční období: </label>
+        <div class="season">
+          <label
+            >jaro <input type="radio" name="favorite-season" value="spring"
+          /></label>
+          <label
+            >léto <input type="radio" name="favorite-season" value="summer"
+          /></label>
+          <label
+            >podzim <input type="radio" name="favorite-season" value="autumn"
+          /></label>
+          <label
+            >zima <input type="radio" name="favorite-season" value="winter"
+          /></label>
+        </div>
+        <div class="month">
+          <label>Nejoblíbenější měsíc: </label>
+          <select name="favorite month">
+            <option value="january">Leden</option>
+            <option value="february">Únor</option>
+            <option value="march">Březen</option>
+            <option value="april">Duben</option>
+            <option value="may">Květen</option>
+            <option value="june">Červen</option>
+            <option value="july">Červenec</option>
+            <option value="august">Srpen</option>
+            <option value="september">Září</option>
+            <option value="october">Říjen</option>
+            <option value="november">Listopad</option>
+            <option value="december">Prosinec</option>
+          </select>
+        </div>
+        <label
+          >Všechny výše uvedené údaje jsou pravdivé:
+          <input name="truthful" required value="yes" type="checkbox"
+        /></label>
+        <label
+          >Doplňující informace
+          <textarea name="additional-information"></textarea>
+        </label>
+        <button type="submit">Odeslat</button>
+        <button type="reset">Vymazat</button>
+      </form>
+    </main>
+  </body>
+</html>
